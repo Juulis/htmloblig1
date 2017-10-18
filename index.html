@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <h1>Dannys Sida!</h1>
+      <h1>Dannys Krypin</h1>
     </header>
     <main>
 
@@ -42,12 +42,12 @@
   </ul>
   <ul>
     <li><img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/14670675_388041134917675_8820700329390297037_n.jpg?oh=44ebcc5614076ad2de5a5d46de758aac&oe=5A69335A" alt="Danny creepy" width="250px">
-        <figcaption>Testar hur jag skulle se ut som Clown! ;)</figcaption>
+        <figcaption>Testar hur jag skulle se ut som Clown!</figcaption>
     </li>
   </ul>
   <ul>
     <li><img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/18519564_539694209752366_1406400275063841430_n.jpg?oh=d46ac21cd835af4d3860b7ea322a70da&oe=5A7F9AE0" alt="Danny i skogen" width="250px">
-        <figcaption>Så skönt med heldag ute i skogen så nära djuren!</figcaption>
+        <figcaption>Så skönt med en heldag ute i skogen så nära djuren!</figcaption>
     </li>
   </ul>
   <ul>
@@ -86,11 +86,11 @@
 
 <section>
     <form>
-      Namn <input type="text" name="name">
+      Namn <input type="text" name="name" pattern="[A-z- ]+" minlength="3" required>
       <br><br>
-      E-Mail <input type="text" name="email">
+      E-Mail <input type="email" name="email" required>
       <br><br>
-      <textarea name="commentfield" rows="7" cols="50" value="Skriv kommentaren här"></textarea>
+      <textarea name="commentfield" rows="7" cols="50" minlength="10" maxlength="255" required></textarea>
       <br>
       <input type="submit" value="Skicka">
     </form>
@@ -98,8 +98,9 @@
 
 </main>
 
-
-<footer></footer>
+<footer>
+	Juulis&copy; 2017 Tomelilla
+</footer>
 
 
   </body>
